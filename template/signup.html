@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='link.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='new.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b style="color:red">{{error}}</b><br>
+    <b style="color:green">{{msg}}</b><br>
+    
+    <h2>signup</h2>
+
+    <div class="dropdown">
+        <button class="dropbtn">tenant Portal</button>
+        <div class="dropdown-content">
+           <a href="{{url_for('home')}}">home</a> 
+          <a href=" {{url_for('signup')}}">SIGNUP</a>
+          <a href="{{url_for('login')}}">LO GIN</a>
+        </div>
+      </div>  
+
+
+
+
+
+
+
+    
+    <form action="/signup" method="post" class="form-group">
+      <label >Houseid</label><br>
+         <input type="number" class="form-control" name="houseid"  id="houseid"><br>
+                                
+        <label > FullName(Required)</label><br>
+         <input type="text" class="form-control" name="names"><br>
+         <label >Email(required)</label><br>
+         <input type="Email" class="form-control" name="email"><br>
+         <label >Password(required)</label><br>
+         <input type="password" class="form-control" name="password">
+                                 <br>
+         <label >Phone</label><br>
+         <input type="number" class="form-control" name="phone"  id="phone"><br>
+                                
+         <label >Gender</label><br>
+         <select class="form-select" name="gender">
+         <option value="Male">Male</option>
+         <option value="Female">Female</option>
+         </select>
+                                 <br>
+
+
+         <input type="submit" class="btn btn-outline-info">
+  </form> <br>
+  <a href="/login">Already have an account ? SIGN IN </a> <br>
+
+
+
+
+
+
+
+
+</body>
+</html>

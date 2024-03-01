@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='link.css')}}">
+ 
+</head>
+<body>
+        
+      <div class="dropdown">
+        <button class="dropbtn">tenant Portal</button>
+        <div class="dropdown-content">
+           <a href="{{url_for('home')}}">My Portal</a> 
+          <a href=" {{url_for('signup')}}">Signup</a>
+          <a href="{{url_for('login')}}">Login</a>
+        </div>
+      </div>
+
+
+
+<h1>MATAWI RENTAL HOUSES</h1>
+
+<section class="row container-fluid">
+    <img src="{{url_for('static', filename ='images/1.jpeg')}}">
+</section>
+
+<br><br>
+
+
+
+<section class="row container-fluid">
+    <div class="col-md-4 card">
+        <div class="card-body text-center">
+            <h2 class="card-title"> Balcony</h2>
+            <img src="{{url_for('static', filename ='images/balcony.jpg')}}">
+            <p class="card-text">Private and spacious balcony, perfect for urban dwellers seeking outdoor space. Offers breathtaking city views and enough space for a table and chairs. Ideal for enjoying morning coffee, relaxing after work, or entertaining guests.</p>
+        </div>
+
+    </div>
+
+    <div class="col-md-4 card">
+        <div class="card-body text-center">
+           <h2 class="card-title"> Living  Room</h2>
+            <img src="{{url_for('static', filename ='images/living.jpg')}}">
+           <p class="card-text"> Spacious and inviting living room, ideal for families or those who love to entertain. Features an open-plan layout with plenty of natural light, hardwood floors, and a cozy fireplace. Perfect for creating a comfortable and welcoming space for gatherings</p>
+       
+        </div>
+
+    </div>
+
+    <div class="col-md-4 card">
+        <div class="card-body text-center">
+            <h2 class="card-title"> Bedroom</h2>
+            <img src="{{url_for('static', filename ='images/bedroom.jpg')}}">
+         <p class="card-text">Spacious and sun-drenched bedroom, ideal for working professionals seeking a peaceful retreat. Features ample closet space and large windows that let in natural light. Perfect for creating a comfortable and productive workspace. </p>
+       
+        </div>
+
+    </div>
+
+</section>
+
+<br><br>
+
+  
+
+
+<section class="row container-fluid">
+    <div class="col-md-4 card">
+        <div class="card-body text-center">
+            <h2 class="card-title"> Bathroom</h2>
+            <img src="{{url_for('static', filename ='images/loo.jpg')}}">
+            <p class="card-text">Updated bathroom with walk-in shower and modern vanity, perfect for young professionals seeking style and convenience. Offers a bright and clean space for daily routines.".</p>
+        </div>
+
+    </div>
+
+    <div class="col-md-4 card">
+        <div class="card-body text-center">
+           <h2 class="card-title"> GYM</h2>
+            <img src="{{url_for('static', filename ='images/gym.jpg')}}">
+           <p class="card-text"> State-of-the-art fitness center conveniently located within the building, offering a wide range of cardio machines, weight training equipment, and free weights. Enjoy diverse group fitness classes, including yoga, HIIT, and Zumba, led by certified instructors. 24/7 access and ample parking available. Invest in your well-being and join our supportive fitness community</p>
+       
+        </div>
+
+    </div>
+
+    <div class="col-md-4 card">
+        <div class="card-body text-center">
+            <h2 class="card-title"> Parking</h2>
+            <img src="{{url_for('static', filename ='images/parking.jpg')}}">
+         <p class="card-text">Ample on-site parking available with assigned spaces for each unit. Conveniently located next to the building entrance. Covered parking options available for an additional fee</p>
+       
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

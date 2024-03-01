@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='link.css')}}">
+</head>
+<body>
+    
+    <section class="row ">
+        <h2>{{ msg }}</h2>
+        <div class="card-shadow p-3">
+            <div class="card-body" >
+
+                    
+
+
+
+                        <h4>houseid: {{ row[0] }}  </h4>  <br><br>
+                        <p>Name: {{ row[1] }}  </p><br><br>
+                        <p>Email:{{  row[2] }}  </p> <br><br>
+                        <p>Password:{{ row[3] }}  </p> <br><br>
+
+                        
+                        <p>phone: {{ row[4] }}  </p><br>
+                        <p>gender:{{row[5]}}  </p><br><br>
+                        
+            </div>
+        </div> 
+        <div class="col-md-4">
+            <form action="/mpesa" method="post">
+
+                <label for="Phone number"></label>
+                <input type="text", name="phone", class="form-control-sm" placeholder="254xxxx"><br><br>
+
+                <label for="Amount"></label>
+                <input type="text" name="amount" class="form-control-sm" placeholder="amount"><br><br>
+                <input type="submit" class="btn btn-dark" value="CHECKOUT">
+                
+
+
+              
+            </form>
+
+
+        </div>          
+     
+    </section>
+</body>
+</html>

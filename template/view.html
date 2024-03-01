@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='link.css')}}">
+</head>
+<body>
+    <section class="row container-fluid">
+        <h2 class="text-center" style="font-family:'Times New Roman', Times, serif; font-weight:bolder; color:red;">{{msg}}</h2>
+    {% for row in rows %}
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+               
+                <div class="card-body ">
+
+
+                    <h4> houseid:</>{{row[0]}} </h4><br><br>
+                    <p>Name:{{row[1]}} </p><br><br>
+                      <p>Email:</p>{{row[2]}} </p><br><br>
+                   <p>Password:</p>{{row[3]}}  </p>  <br><br>
+                   <p>phone:</>{{row[4]}} </p><br><br>
+        
+                   <p>gender: {{row[5]}}  </p><br><br>
+                </div>
+           
+            </div>
+        </div>
+    
+  
+               
+    {% endfor %}
+
+
+
+
+
+
+
+    </section>
+</body>
+</html> 

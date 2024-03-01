@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='link.css')}}">
+ 
+</head>
+<body>
+
+  
+    <h3 style="color: red;">{{msg}}</h3>
+<h2>login</h2>
+  
+<div class="dropdown">
+    <button class="dropbtn">tenant Portal</button>
+    <div class="dropdown-content">
+       <a href="{{url_for('home')}}">home</a> 
+      <a href=" {{url_for('signup')}}">SIGNUP</a>
+      <a href="{{url_for('login')}}">LO GIN</a>
+    </div>
+  </div>
+
+
+
+    
+    <form action="/login" method="post" class="form-group">
+                           
+        <label >Houseid</label><br>
+        <input type="number" class="form-control" name="houseid"  id="houseid"><br>
+                                                 
+        <label >Phone</label><br>
+        <input type="number" class="form-control" name="phone" id="phone"><br>
+        <label >Password(required)</label><br>
+        <input type="password" class="form-control" name="password">
+                                <br>               
+        
+                                <br>
+
+
+        <input type="submit" class="btn btn-outline-info">
+ </form>
+<br>
+
+
+
+
+
+
+
+</body>
+</html>
